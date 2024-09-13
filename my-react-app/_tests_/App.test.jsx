@@ -4,8 +4,10 @@ import App from "../src/App";
 
 it("click should increase count", () => {
   render(<App />);
-  expect(screen.getByTitle("Click Me!")).toHaveTextContent("count is 0");
 
-  fireEvent.click(screen.getByTitle("Click Me!"));
-  expect(screen.getByTitle("Click Me!")).toHaveTextContent("count is 1");
+  const button = screen.getByTitle("Click Me!");
+  expect(button).toHaveTextContent("count is 0");
+
+  fireEvent.click(button);
+  expect(button).toHaveTextContent("count is 1");
 });

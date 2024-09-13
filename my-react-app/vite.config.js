@@ -5,10 +5,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   test: {
-    // 👋 add the line below to add jsdom to vite
-    environment: 'jsdom',
-    // hey! 👋 over here
+    environment: "jsdom",
     globals: true,
-    setupFiles: './tests/setup.js', // assuming the test folder is in the root of our project
-  }
+    include: ["_tests_/**/*.{test,spec}.?(c|m)[jt]s?(x)"],
+    setupFiles: "./_tests_/setup.js", // assuming the test folder is in the root of our project
+  },
 });

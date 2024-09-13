@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "test-pw": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -16,9 +17,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@playwright/experimental-ct-react": "^1.47.1",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.5.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
