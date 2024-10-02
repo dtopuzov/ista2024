@@ -1,3 +1,3 @@
 // Import styles, initialize component theme here.
-import '../src/App.css';
+import '../src/LoginForm.css';
 import '../src/index.css';
